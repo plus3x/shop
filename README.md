@@ -1,5 +1,9 @@
 # Hotels
 
+[![Build Status](https://secure.travis-ci.org/plus3x/hotels_elixir.svg?branch=master "Build Status")](http://travis-ci.org/plus3x/hotels_elixir)
+[![Coverage Status](https://coveralls.io/repos/plus3x/hotels_elixir/badge.svg?branch=master)](https://coveralls.io/r/plus3x/hotels_elixir?branch=master)
+[![Deps Status](https://beta.hexfaktor.org/badge/all/github/plus3x/hotels_elixir.svg)](https://beta.hexfaktor.org/github/plus3x/hotels_elixir)
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
