@@ -21,4 +21,4 @@ before_script:
 
 script:
   - mix credo --strict
-  - mix test --cover
+  - mix coveralls.travis
