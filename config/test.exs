@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :hotels, Hotels.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "hotels",
+  password: "hotels",
   database: "hotels_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
