@@ -1,0 +1,14 @@
+{
+  "skip_files": [
+    "test/",
+    "web/web.ex",
+    "web/router.ex",
+    "web/views/error_helpers.ex",
+    "lib/hotels.ex"
+  ],
+  "coverage_options": {
+    "treat_no_relevant_lines_as_covered": true,
+    "output_dir": "cover/",
+    "minimum_coverage": 90
+  }
+}
