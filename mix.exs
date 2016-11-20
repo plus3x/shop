@@ -12,22 +12,33 @@ defmodule Hotels.Mixfile do
       start_permanent: Mix.env == :prod,
       aliases: aliases,
       deps: deps,
-     test_coverage: [tool: ExCoveralls]
-   ]
+      test_coverage: [tool: ExCoveralls]
+    ]
   end
 
   # Configuration for the OTP application.
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {Hotels, []},
-     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+    [
+      mod: {Hotels, []},
+      applications: [
+        :phoenix,
+        :phoenix_pubsub,
+        :phoenix_html,
+        :phoenix_ecto,
+        :cowboy,
+        :logger,
+        :gettext,
+        :postgrex,
+        :httpotion
+      ]
+    ]
   end
 
   # Specifies which paths to compile per environment.
-  defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
-  defp elixirc_paths(_),     do: ["lib", "web"]
+  defp elixirc_paths(:test), do: ~w(lib web test/support)
+  defp elixirc_paths(_),     do: ~w(lib web)
 
   # Specifies your project dependencies.
   #
@@ -41,6 +52,7 @@ defmodule Hotels.Mixfile do
      {:phoenix_html, "~> 2.6"},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
+     {:httpotion, "~> 3.0"},
      {:excoveralls, "~> 0.5", only: :test},
      {:credo, "~> 0.5", only: [:dev, :test]},
      {:phoenix_live_reload, "~> 1.0", only: :dev}
