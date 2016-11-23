@@ -1,4 +1,4 @@
 ExUnit.start
 
-Ecto.Adapters.SQL.Sandbox.mode(Hotels.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(GDS.Repo, :manual)
 

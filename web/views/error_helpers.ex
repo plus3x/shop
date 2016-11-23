@@ -1,4 +1,4 @@
-defmodule Hotels.ErrorHelpers do
+defmodule GDS.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule Hotels.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(Hotels.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(GDS.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(Hotels.Gettext, "errors", msg, opts)
+      Gettext.dgettext(GDS.Gettext, "errors", msg, opts)
     end
   end
 end

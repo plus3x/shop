@@ -1,3 +1,3 @@
-defmodule Hotels.PageViewTest do
-  use Hotels.ConnCase, async: true
+defmodule GDS.PageViewTest do
+  use GDS.ConnCase, async: true
 end

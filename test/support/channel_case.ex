@@ -1,4 +1,4 @@
-defmodule Hotels.ChannelCase do
+defmodule GDS.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -20,22 +20,22 @@ defmodule Hotels.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias Hotels.Repo
+      alias GDS.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
 
 
       # The default endpoint for testing
-      @endpoint Hotels.Endpoint
+      @endpoint GDS.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Hotels.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(GDS.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Hotels.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(GDS.Repo, {:shared, self()})
     end
 
     :ok

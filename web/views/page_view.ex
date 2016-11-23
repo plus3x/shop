@@ -1,3 +1,3 @@
-defmodule Hotels.PageView do
-  use Hotels.Web, :view
+defmodule GDS.PageView do
+  use GDS.Web, :view
 end

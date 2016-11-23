@@ -1,9 +1,9 @@
-defmodule Hotels.Mixfile do
+defmodule GDS.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :hotels,
+      app: :gds,
       version: "0.0.1",
       elixir: "~> 1.2",
       elixirc_paths: elixirc_paths(Mix.env),
@@ -21,7 +21,7 @@ defmodule Hotels.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Hotels, []},
+      mod: {GDS, []},
       applications: [
         :phoenix,
         :phoenix_pubsub,

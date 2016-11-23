@@ -1,7 +1,7 @@
-defmodule Hotels do
+defmodule GDS do
   use Application
 
-  alias Hotels.Endpoint
+  alias GDS.Endpoint
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
   # for more information on OTP Applications
@@ -11,16 +11,16 @@ defmodule Hotels do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the Ecto repository
-      supervisor(Hotels.Repo, []),
+      supervisor(GDS.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(Hotels.Endpoint, []),
-      # Start your own worker by calling: Hotels.Worker.start_link(arg1, arg2, arg3)
-      # worker(Hotels.Worker, [arg1, arg2, arg3]),
+      supervisor(GDS.Endpoint, []),
+      # Start your own worker by calling: GDS.Worker.start_link(arg1, arg2, arg3)
+      # worker(GDS.Worker, [arg1, arg2, arg3]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Hotels.Supervisor]
+    opts = [strategy: :one_for_one, name: GDS.Supervisor]
     Supervisor.start_link(children, opts)
   end
 

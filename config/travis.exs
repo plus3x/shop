@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :hotels, Hotels.Endpoint,
+config :gds, GDS.Endpoint,
   http: [port: 4001],
   server: false
 
@@ -10,10 +10,10 @@ config :hotels, Hotels.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :hotels, Hotels.Repo,
+config :gds, GDS.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "",
-  database: "hotels_test",
+  database: "gds_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

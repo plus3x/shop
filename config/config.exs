@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :hotels,
-  ecto_repos: [Hotels.Repo]
+config :gds,
+  ecto_repos: [GDS.Repo]
 
 # Configures the endpoint
-config :hotels, Hotels.Endpoint,
+config :gds, GDS.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "OuxeLMfj91oLtj921hXFvbFKcEHp4jO6mtIGGooODTAfShX7ymJbFR64bP/xBTMv",
-  render_errors: [view: Hotels.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Hotels.PubSub,
+  render_errors: [view: GDS.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: GDS.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

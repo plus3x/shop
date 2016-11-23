@@ -1,12 +1,12 @@
-defmodule Hotels.Web do
+defmodule GDS.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Hotels.Web, :controller
-      use Hotels.Web, :view
+      use GDS.Web, :controller
+      use GDS.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule Hotels.Web do
     quote do
       use Phoenix.Controller
 
-      alias Hotels.Repo
+      alias GDS.Repo
       import Ecto
       import Ecto.Query
 
-      import Hotels.Router.Helpers
-      import Hotels.Gettext
+      import GDS.Router.Helpers
+      import GDS.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule Hotels.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Hotels.Router.Helpers
-      import Hotels.ErrorHelpers
-      import Hotels.Gettext
+      import GDS.Router.Helpers
+      import GDS.ErrorHelpers
+      import GDS.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule Hotels.Web do
     quote do
       use Phoenix.Channel
 
-      alias Hotels.Repo
+      alias GDS.Repo
       import Ecto
       import Ecto.Query
-      import Hotels.Gettext
+      import GDS.Gettext
     end
   end
 

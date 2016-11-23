@@ -1,3 +1,3 @@
-defmodule Hotels.LayoutViewTest do
-  use Hotels.ConnCase, async: true
+defmodule GDS.LayoutViewTest do
+  use GDS.ConnCase, async: true
 end

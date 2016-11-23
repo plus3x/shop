@@ -1,14 +1,14 @@
-defmodule Hotels.Endpoint do
-  use Phoenix.Endpoint, otp_app: :hotels
+defmodule GDS.Endpoint do
+  use Phoenix.Endpoint, otp_app: :gds
 
-  socket "/socket", Hotels.UserSocket
+  socket "/socket", GDS.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :hotels, gzip: false,
+    at: "/", from: :gds, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,8 +35,8 @@ defmodule Hotels.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_hotels_key",
+    key: "_gds_key",
     signing_salt: "1jw+G+Uv"
 
-  plug Hotels.Router
+  plug GDS.Router
 end

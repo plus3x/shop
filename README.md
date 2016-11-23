@@ -1,8 +1,8 @@
-# Hotels
+# GDS
 
-[![Build Status](https://secure.travis-ci.org/plus3x/hotels_elixir.svg?branch=master "Build Status")](http://travis-ci.org/plus3x/hotels_elixir)
-[![Coverage Status](https://coveralls.io/repos/github/plus3x/hotels_elixir/badge.svg?branch=master)](https://coveralls.io/github/plus3x/hotels_elixir?branch=master)
-[![Deps Status](https://beta.hexfaktor.org/badge/all/github/plus3x/hotels_elixir.svg)](https://beta.hexfaktor.org/github/plus3x/hotels_elixir)
+[![Build Status](https://secure.travis-ci.org/plus3x/gds.svg?branch=master "Build Status")](http://travis-ci.org/plus3x/gds)
+[![Coverage Status](https://coveralls.io/repos/github/plus3x/gds/badge.svg?branch=master)](https://coveralls.io/github/plus3x/gds?branch=master)
+[![Deps Status](https://beta.hexfaktor.org/badge/all/github/plus3x/gds.svg)](https://beta.hexfaktor.org/github/plus3x/gds)
 
 To start your Phoenix app:
 

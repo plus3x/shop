@@ -1,5 +1,5 @@
-defmodule Hotels.Router do
-  use Hotels.Web, :router
+defmodule GDS.Router do
+  use GDS.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule Hotels.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Hotels do
+  scope "/", GDS do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Hotels do
+  # scope "/api", GDS do
   #   pipe_through :api
   # end
 end

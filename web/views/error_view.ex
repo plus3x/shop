@@ -1,5 +1,5 @@
-defmodule Hotels.ErrorView do
-  use Hotels.Web, :view
+defmodule GDS.ErrorView do
+  use GDS.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

@@ -1,4 +1,4 @@
-defmodule Hotels.ConnCase do
+defmodule GDS.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,23 +20,23 @@ defmodule Hotels.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      alias Hotels.Repo
+      alias GDS.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
 
-      import Hotels.Router.Helpers
+      import GDS.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint Hotels.Endpoint
+      @endpoint GDS.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Hotels.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(GDS.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Hotels.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(GDS.Repo, {:shared, self()})
     end
 
     {:ok, conn: Phoenix.ConnTest.build_conn()}

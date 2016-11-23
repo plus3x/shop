@@ -1,3 +1,3 @@
-defmodule Hotels.LayoutView do
-  use Hotels.Web, :view
+defmodule GDS.LayoutView do
+  use GDS.Web, :view
 end
