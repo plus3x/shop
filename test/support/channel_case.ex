@@ -1,4 +1,4 @@
-defmodule GDS.ChannelCase do
+defmodule Shop.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -20,22 +20,22 @@ defmodule GDS.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias GDS.Repo
+      alias Shop.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
 
 
       # The default endpoint for testing
-      @endpoint GDS.Endpoint
+      @endpoint Shop.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(GDS.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Shop.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(GDS.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Shop.Repo, {:shared, self()})
     end
 
     :ok

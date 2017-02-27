@@ -1,3 +1,3 @@
-defmodule GDS.PageViewTest do
-  use GDS.ConnCase, async: true
+defmodule Shop.PageViewTest do
+  use Shop.ConnCase, async: true
 end

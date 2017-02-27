@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :gds, GDS.Endpoint,
+config :shop, Shop.Endpoint,
   http: [port: 4001],
   server: false
 
@@ -10,10 +10,10 @@ config :gds, GDS.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :gds, GDS.Repo,
+config :shop, Shop.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "gds",
-  password: "gds",
-  database: "gds_test",
+  username: "shop",
+  password: "shop",
+  database: "shop_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

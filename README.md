@@ -1,9 +1,9 @@
-# GDS
+# Shop
 
-[![Build Status](https://secure.travis-ci.org/plus3x/gds.svg?branch=master "Build Status")](http://travis-ci.org/plus3x/gds)
-[![Circle CI](https://circleci.com/gh/plus3x/gds.svg?style=shield)](https://circleci.com/gh/plus3x/gds)
-[![Coverage Status](https://coveralls.io/repos/github/plus3x/gds/badge.svg?branch=master)](https://coveralls.io/github/plus3x/gds?branch=master)
-[![Deps Status](https://beta.hexfaktor.org/badge/all/github/plus3x/gds.svg)](https://beta.hexfaktor.org/github/plus3x/gds)
+[![Build Status](https://travis-ci.org/plus3x/shop.svg?branch=master)](https://travis-ci.org/plus3x/shop)
+[![Circle CI](https://circleci.com/gh/plus3x/shop.svg?style=shield)](https://circleci.com/gh/plus3x/shop)
+[![Coverage Status](https://coveralls.io/repos/github/plus3x/shop/badge.svg?branch=master)](https://coveralls.io/github/plus3x/shop?branch=master)
+[![Deps Status](https://beta.hexfaktor.org/badge/all/github/plus3x/shop.svg)](https://beta.hexfaktor.org/github/plus3x/shop)
 
 To start your Phoenix app:
 

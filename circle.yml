@@ -18,9 +18,9 @@ dependencies:
     - mix local.hex --force
     - mix local.rebar --force
   override:
-    - createuser --superuser --createdb gds || true
-    - createdb gds_test || true
-    - psql --username=postgres --dbname=postgres --command="ALTER USER gds WITH PASSWORD 'gds';"
+    - createuser --superuser --createdb shop || true
+    - createdb shop_test || true
+    - psql --username=postgres --dbname=postgres --command="ALTER USER shop WITH PASSWORD 'shop';"
     - mix deps.get
     - mix deps.compile
 

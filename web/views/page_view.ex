@@ -1,3 +1,3 @@
-defmodule GDS.PageView do
-  use GDS.Web, :view
+defmodule Shop.PageView do
+  use Shop.Web, :view
 end

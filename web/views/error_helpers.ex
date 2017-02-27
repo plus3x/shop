@@ -1,4 +1,4 @@
-defmodule GDS.ErrorHelpers do
+defmodule Shop.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -8,6 +8,7 @@ defmodule GDS.ErrorHelpers do
   @doc """
   Generates tag for inlined form input errors.
   """
+  @spec error_tag(any, any) :: any
   def error_tag(form, field) do
     if error = form.errors[field] do
       content_tag :span, translate_error(error), class: "help-block"
@@ -17,6 +18,7 @@ defmodule GDS.ErrorHelpers do
   @doc """
   Translates an error message using gettext.
   """
+  @spec translate_error(any) :: any
   def translate_error({msg, opts}) do
     # Because error messages were defined within Ecto, we must
     # call the Gettext module passing our Gettext backend. We
@@ -32,9 +34,9 @@ defmodule GDS.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(GDS.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(Shop.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(GDS.Gettext, "errors", msg, opts)
+      Gettext.dgettext(Shop.Gettext, "errors", msg, opts)
     end
   end
 end

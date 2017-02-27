@@ -1,17 +1,17 @@
-defmodule GDS.Mixfile do
+defmodule Shop.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :gds,
+      app: :shop,
       version: "0.0.1",
       elixir: "~> 1.2",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      aliases: aliases,
-      deps: deps,
+      aliases: aliases(),
+      deps: deps(),
       test_coverage: [tool: ExCoveralls]
     ]
   end
@@ -21,7 +21,7 @@ defmodule GDS.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {GDS, []},
+      mod: {Shop, []},
       applications: [
         :phoenix,
         :phoenix_pubsub,

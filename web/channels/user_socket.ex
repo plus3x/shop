@@ -1,8 +1,8 @@
-defmodule GDS.UserSocket do
+defmodule Shop.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", GDS.RoomChannel
+  # channel "room:*", Shop.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
@@ -19,6 +19,7 @@ defmodule GDS.UserSocket do
   #
   # See `Phoenix.Token` documentation for examples in
   # performing token verification on connect.
+  @spec connect(any, any) :: any
   def connect(_params, socket) do
     {:ok, socket}
   end
@@ -30,8 +31,9 @@ defmodule GDS.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     GDS.Endpoint.broadcast("users_socket:#{user.id}", "disconnect", %{})
+  #     Shop.Endpoint.broadcast("users_socket:#{user.id}", "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
+  @spec id(any) :: nil
   def id(_socket), do: nil
 end

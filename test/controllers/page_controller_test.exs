@@ -1,5 +1,5 @@
-defmodule GDS.PageControllerTest do
-  use GDS.ConnCase
+defmodule Shop.PageControllerTest do
+  use Shop.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

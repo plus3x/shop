@@ -1,12 +1,12 @@
-defmodule GDS.Web do
+defmodule Shop.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use GDS.Web, :controller
-      use GDS.Web, :view
+      use Shop.Web, :controller
+      use Shop.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule GDS.Web do
     quote do
       use Phoenix.Controller
 
-      alias GDS.Repo
+      alias Shop.Repo
       import Ecto
       import Ecto.Query
 
-      import GDS.Router.Helpers
-      import GDS.Gettext
+      import Shop.Router.Helpers
+      import Shop.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule GDS.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import GDS.Router.Helpers
-      import GDS.ErrorHelpers
-      import GDS.Gettext
+      import Shop.Router.Helpers
+      import Shop.ErrorHelpers
+      import Shop.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule GDS.Web do
     quote do
       use Phoenix.Channel
 
-      alias GDS.Repo
+      alias Shop.Repo
       import Ecto
       import Ecto.Query
-      import GDS.Gettext
+      import Shop.Gettext
     end
   end
 

@@ -1,5 +1,5 @@
-defmodule GDS.Router do
-  use GDS.Web, :router
+defmodule Shop.Router do
+  use Shop.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule GDS.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", GDS do
+  scope "/", Shop do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", GDS do
+  # scope "/api", Shop do
   #   pipe_through :api
   # end
 end

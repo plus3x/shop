@@ -7,10 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello GDS!</title>
+    <title>Hello Shop!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-
-    <meta name='B-verify' content='8cbd1bd28fd9969639c2d8f9683785fa9a498b73' />
   </head>
 
   <body>

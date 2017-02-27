@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :gds,
-  ecto_repos: [GDS.Repo]
+config :shop,
+  ecto_repos: [Shop.Repo]
 
 # Configures the endpoint
-config :gds, GDS.Endpoint,
+config :shop, Shop.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "OuxeLMfj91oLtj921hXFvbFKcEHp4jO6mtIGGooODTAfShX7ymJbFR64bP/xBTMv",
-  render_errors: [view: GDS.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: GDS.PubSub,
+  render_errors: [view: Shop.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Shop.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
